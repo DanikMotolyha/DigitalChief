@@ -5,6 +5,26 @@
 ### [Postman requests](/digitalChief.postman_collection.json)
 ### [Create sql](/create.sql)
 
+# Description
+
+Две сущности : Developer и Project. Для каждого Project один Developer.
+## Entities properties
+### Developer
+1. id
+1. fio
+1. phone number
+1. english level (enum)
+1. city
+1. ready to relocate (boolean)
+1. skype login
+### Project
+2. id
+2. name
+2. version
+2. domain
+2. documentation link
+2. released (boolean)
+
 # Getting started & Windows
 
 ### Dependencies
