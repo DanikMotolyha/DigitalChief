@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "0fdae229-d79f-41a1-97e0-e2567868077e",
+		"_postman_id": "fbb382f9-c006-4a5d-8e5a-6c9477978caf",
 		"name": "digitalChief",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -42,15 +42,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/product/getAll",
+							"raw": "http://localhost:8080/developer/",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"product",
-								"getAll"
+								"developer",
+								""
 							]
 						}
 					},
@@ -90,15 +90,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/product/getAll",
+							"raw": "http://localhost:8080/developer/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"product",
-								"getAll"
+								"developer",
+								"1"
 							]
 						}
 					},
@@ -233,22 +233,22 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/product/getAll",
+							"raw": "http://localhost:8080/project/",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"product",
-								"getAll"
+								"project",
+								""
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "getAll Copy",
+					"name": "getById",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -281,15 +281,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/product/getAll",
+							"raw": "http://localhost:8080/project/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"product",
-								"getAll"
+								"project",
+								"1"
 							]
 						}
 					},
