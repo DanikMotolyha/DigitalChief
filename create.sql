@@ -1,0 +1,3 @@
+create table developer (level tinyint check (level between 0 and 5), ready_to_relocate bit, id bigint not null auto_increment, city_location varchar(255), fio varchar(255), phone_number varchar(255), skype_login varchar(255), primary key (id)) engine=InnoDB;
+create table project (released bit, id bigint not null auto_increment, project_manager_id bigint, documentation_link varchar(255), domain varchar(255), name varchar(255), version varchar(255), primary key (id)) engine=InnoDB;
+alter table project add constraint FK452ae7hw1cqfpdms95o0ll5xo foreign key (project_manager_id) references developer (id);
