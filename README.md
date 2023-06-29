@@ -3,6 +3,7 @@
 
 ### [Technical task](/Тестовое%20задание%20для%20JAVA%20Trainee.pdf)
 ### [Postman requests](/digitalChief.postman_collection.json)
+### [Create sql](/create.sql)
 
 # Getting started & Windows
 
