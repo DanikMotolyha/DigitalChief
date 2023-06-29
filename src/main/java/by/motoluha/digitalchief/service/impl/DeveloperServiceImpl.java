@@ -1,5 +1,6 @@
 package by.motoluha.digitalchief.service.impl;
 
+import by.motoluha.digitalchief.ecxeption.DeveloperNotFoundException;
 import by.motoluha.digitalchief.entity.Developer;
 import by.motoluha.digitalchief.repository.DeveloperRepository;
 import by.motoluha.digitalchief.service.DeveloperService;
@@ -28,5 +29,15 @@ public class DeveloperServiceImpl implements DeveloperService {
     @Override
     public Developer save(Developer entity) {
         return developerRepository.save(entity);
+    }
+
+    @Override
+    public void delete(Long id) {
+        Optional<Developer> byId = developerRepository.findById(id);
+        if(byId.isPresent()){
+            developerRepository.delete(byId.get());
+        } else {
+            throw new DeveloperNotFoundException("Cannot find developer by id: " + id);
+        }
     }
 }

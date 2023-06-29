@@ -32,4 +32,11 @@ public interface CrudService<T> {
      * @return result object T
      */
     T save(T entity);
+
+    /**
+     * Delete entity from db.
+     * When cannot find entity by id, throws NotFoundException
+     * @param id entity id
+     */
+    void delete(Long id);
 }

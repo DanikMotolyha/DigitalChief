@@ -1,5 +1,6 @@
 package by.motoluha.digitalchief.service.impl;
 
+import by.motoluha.digitalchief.ecxeption.ProjectNotFountException;
 import by.motoluha.digitalchief.entity.Project;
 import by.motoluha.digitalchief.repository.ProjectRepository;
 import by.motoluha.digitalchief.service.ProjectService;
@@ -28,5 +29,15 @@ public class ProjectServiceImpl implements ProjectService {
     @Override
     public Project save(Project entity) {
         return projectRepository.save(entity);
+    }
+
+    @Override
+    public void delete(Long id) {
+        Optional<Project> byId = projectRepository.findById(id);
+        if (byId.isPresent()) {
+            projectRepository.delete(byId.get());
+        } else {
+            throw new ProjectNotFountException("Cannot find project by id: " + id);
+        }
     }
 }

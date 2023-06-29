@@ -165,6 +165,44 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "edit Copy",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/developer/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"developer",
+								"2"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -269,7 +307,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"bank prosto\",\r\n    \"version\": \"1.2.4-fix\",\r\n    \"domain\": \"abc\",\r\n    \"documentationLink\": \"doc/link\",\r\n    \"released\": true,\r\n    \"projectManager\": {\r\n        \"id\": 2,\r\n        \"fio\": \"Motoluha Daniil Ihorevich\",\r\n        \"phoneNumber\": \"+375447613008\",\r\n        \"level\": \"B1\",\r\n        \"cityLocation\": \"Minsk\",\r\n        \"readyToRelocate\": true,\r\n        \"skypeLogin\": \"danik.motoluha\"\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -324,6 +362,44 @@
 							"path": [
 								"project",
 								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit Copy",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/project/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"project",
+								"1"
 							]
 						}
 					},

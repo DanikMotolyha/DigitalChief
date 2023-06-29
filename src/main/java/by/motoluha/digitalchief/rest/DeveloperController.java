@@ -31,4 +31,9 @@ public class DeveloperController {
         return developerService.save(developer);
     }
 
+    @DeleteMapping("/{id}")
+    void delete(@PathVariable Long id) {
+        developerService.delete(id);
+    }
+
 }
