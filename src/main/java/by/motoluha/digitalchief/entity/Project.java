@@ -2,15 +2,15 @@ package by.motoluha.digitalchief.entity;
 
 
 import jakarta.persistence.*;
-
-import java.math.BigInteger;
+import lombok.Data;
 
 @Entity
+@Data
 public class Project {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private BigInteger id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     private String name;
 
